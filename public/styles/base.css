@@ -1,11 +1,33 @@
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 15px 0px;
+}
+
+p {
+  margin: 0.5em 0em;
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   margin: 0 auto;
   max-width: 768px;
   width: 100%;
 }
 
-.links {
-  margin: 0 20px;
+#pageTitle {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -66,17 +88,15 @@
     display: none
   }
 
-  #links {
+  .links {
+    margin-right: 15px;
     display: inline;
-    left: 365px;
-    padding-right: 20px;
-    top: -60px;
     border: none;
+    font-size: 1.5em;
   }
 
   .nav {
-    /* float: right; */
-    padding-right: 15px;
-    top: -8px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #302f2f;
   }
 }
