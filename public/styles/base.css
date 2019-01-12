@@ -1,13 +1,23 @@
+body {
+  margin: 0px 15px;
+}
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.25em;
   margin-top: 0px;
   margin-bottom: 15px;
+  margin-right: 0px;
+  width: 40%;
+  display: inline-block;
 }
 
 h2 {
   font-size: 2em;
   margin: 15px 0px;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 p {
@@ -23,6 +33,22 @@ a {
   margin: 0 auto;
   max-width: 768px;
   width: 100%;
+}
+
+.abouth3 {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.aboutImg {
+  width: 40%;
+  float: right;
+  margin-top: 15px;
+}
+
+.aboutDiv {
+  display: inline-block;
+  width: 58%;
 }
 
 #pageTitle {
@@ -42,52 +68,95 @@ a {
   
   .links-active {
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     text-align: center;
     width: 100%;
+    border-bottom: 1px solid #747171;
+  }
+
+  .links-active-title {
+    margin-bottom: 0px;
   }
 
   #burger {
     cursor: pointer;
-    display: block;
-    position: absolute;
-	  top: -74px;
-	  right: 20px;
-    width: 75px;
-  }
-  
-  #burger img {
-    border: none !important;
-    width: 75px;
+    float: right;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-right: 5px;
   }
   
   .nav {
-    position: relative;
     top: 17px;
-  }
-
-  .backhoe a {
-    height: 50px;
-    left: 0px;
-    position: absolute;
-    top: 24px;
   }
 
   #navbottom {
     border-bottom: 2px solid #302f2f;
+    margin-bottom: 35px;
   }
 
   .abouth2 {
     font-size: 1.75em;
     text-align: center;
   }
+
+  #pageTitle {
+    margin-top: 0px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  #burger {
-    display: none
+@media only screen and (min-width: 768px, max-width 1024px) {
+  .links {
+    display: none;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  	margin: 0;
+  }
+  
+  .links-active {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #747171;
   }
 
+  .links-active-title {
+    margin-bottom: 0px;
+  }
+
+  #burger {
+    cursor: pointer;
+    float: right;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  
+  .nav {
+    top: 17px;
+  }
+
+  #navbottom {
+    border-bottom: 2px solid #302f2f;
+    margin-bottom: 35px;
+  }
+
+  .abouth2 {
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  #pageTitle {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
   .links {
     margin-right: 15px;
     display: inline;
@@ -98,5 +167,9 @@ a {
   .nav {
     padding-bottom: 15px;
     border-bottom: 2px solid #302f2f;
+  }
+
+  #burger {
+    display: none
   }
 }

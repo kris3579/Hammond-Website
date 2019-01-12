@@ -1,14 +1,14 @@
+<a id="burger">&#9776;</a>
 <nav class="nav">
-  <a id="burger" class="backhoe"><img src="../imgs/backhoe.svg"/></a>
   <a class="links" href="/">Home</a>
   <a class="links" href="/contact">Contact</a>
 	<a class="links" id="navbottom" href="/about">About Gary</a>
 </nav>
-<script type="text/javascript">
-	
+
+<script type="text/javascript">	
 	let burger = document.getElementById('burger');
   burger.addEventListener('click', function() {
-    burger.classList.toggle('active');
-		$('.links').toggleClass('links-active');
+    $('.links').toggleClass('links-active');
+    $('.title').toggleClass('links-active-title');
 	});
 </script>

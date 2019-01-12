@@ -40,7 +40,7 @@ function homePage(req, res) {
 function aboutUs(req, res) {
   res.render('master', {
     'thisPage': 'partials/about.ejs',
-    'thisPageTitle': 'About Us'
+    'thisPageTitle': 'About'
   });
 }
 
