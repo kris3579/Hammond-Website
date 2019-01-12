@@ -1,0 +1,82 @@
+.container {
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+}
+
+.links {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .links {
+    display: none;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  	margin: 0;
+  }
+  
+  .links-active {
+    display: inline-block;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #burger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+	  top: -74px;
+	  right: 20px;
+    width: 75px;
+  }
+  
+  #burger img {
+    border: none !important;
+    width: 75px;
+  }
+  
+  .nav {
+    position: relative;
+    top: 17px;
+  }
+
+  .backhoe a {
+    height: 50px;
+    left: 0px;
+    position: absolute;
+    top: 24px;
+  }
+
+  #navbottom {
+    border-bottom: 2px solid #302f2f;
+  }
+
+  .abouth2 {
+    font-size: 1.75em;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #burger {
+    display: none
+  }
+
+  #links {
+    display: inline;
+    left: 365px;
+    padding-right: 20px;
+    top: -60px;
+    border: none;
+  }
+
+  .nav {
+    /* float: right; */
+    padding-right: 15px;
+    top: -8px;
+  }
+}
