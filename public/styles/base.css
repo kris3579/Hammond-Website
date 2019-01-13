@@ -1,11 +1,11 @@
 body {
-  margin: 0px 15px;
+  margin: 0% 2%;
 }
 
 h1 {
   font-size: 2.25em;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-right: 0px;
   width: 40%;
   display: inline-block;
@@ -52,14 +52,27 @@ a {
 }
 
 #pageTitle {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    border-bottom: 2px solid #302f2f;
+    margin-bottom: 10px;
+  }
+
   .links {
     display: none;
-    font-size: 1.5em;
+    font-size: 1.35em;
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
@@ -79,21 +92,26 @@ a {
     margin-bottom: 0px;
   }
 
+  .aboutImg {
+    width: 90%;
+    float: none;
+  }
+
   #burger {
     cursor: pointer;
     float: right;
-    font-size: 1.5em;
+    font-size: 1.35em;
     margin-top: 5px;
     margin-right: 5px;
   }
   
-  .nav {
-    top: 17px;
+  .noBorder {
+    border-bottom: none;
   }
 
   #navbottom {
     border-bottom: 2px solid #302f2f;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
   }
 
   .abouth2 {
@@ -106,53 +124,21 @@ a {
   }
 }
 
-@media only screen and (min-width: 768px, max-width 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .links {
-    display: none;
-    font-size: 1.5em;
-    padding-bottom: 10px;
-    text-align: center;
-    width: 100%;
-  	margin: 0;
-  }
-  
-  .links-active {
-    display: inline-block;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid #747171;
+    margin-right: 15px;
+    display: inline;
+    border: none;
+    font-size: 1.35em;
   }
 
-  .links-active-title {
-    margin-bottom: 0px;
+  .nav {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #302f2f;
   }
 
   #burger {
-    cursor: pointer;
-    float: right;
-    font-size: 1.5em;
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-  
-  .nav {
-    top: 17px;
-  }
-
-  #navbottom {
-    border-bottom: 2px solid #302f2f;
-    margin-bottom: 35px;
-  }
-
-  .abouth2 {
-    font-size: 1.75em;
-    text-align: center;
-  }
-
-  #pageTitle {
-    margin-top: 0px;
+    display: none
   }
 }
 
@@ -161,11 +147,11 @@ a {
     margin-right: 15px;
     display: inline;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
 
   .nav {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #302f2f;
   }
 
