@@ -21,7 +21,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  aboutUs(req, res);
+  about(req, res);
+});
+
+app.get('/contact', (req, res) => {
+  contactPage(req, res);
 });
 
 app.get('*', (req, res) => {
@@ -37,10 +41,17 @@ function homePage(req, res) {
   });
 }
 
-function aboutUs(req, res) {
+function about(req, res) {
   res.render('master', {
     'thisPage': 'partials/about.ejs',
     'thisPageTitle': 'About'
+  });
+}
+
+function contactPage(req, res) {
+  res.render('master', {
+    'thisPage': 'partials/contact.ejs',
+    'thisPageTitle': 'Contact'
   });
 }
 
