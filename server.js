@@ -44,7 +44,7 @@ function homePage(req, res) {
 function about(req, res) {
   res.render('master', {
     'thisPage': 'partials/about.ejs',
-    'thisPageTitle': 'About'
+    'thisPageTitle': 'Gary Hammon'
   });
 }
 
