@@ -49,8 +49,7 @@ iframe {
 .aboutImg {
   width: 30%;
   float: right;
-  margin-top: 15px;
-  clear: both;
+  margin-left: 7px;
 }
 
 .aboutDiv {
@@ -79,6 +78,10 @@ iframe {
     margin-bottom: 10px;
   }
 
+  p {
+    font-size: 1.05em;
+  }
+
   .links {
     display: none;
     font-size: 1.35em;
@@ -102,8 +105,12 @@ iframe {
   }
 
   .aboutImg {
-    width: 90%;
+    width: 80%;
     float: none;
+  }
+
+  .aboutDiv {
+    width: 95%;
   }
 
   #burger {
@@ -136,6 +143,14 @@ iframe {
 /* Tablet Sized */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutDiv {
+    width: 60%;
+  }
+
+  .aboutImg {
+    width: 50%;
+  }
+
   .links {
     margin-right: 15px;
     display: inline;
