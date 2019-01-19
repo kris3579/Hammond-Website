@@ -21,12 +21,18 @@ h3 {
 }
 
 p {
-  margin: 0.5em 0em;
+  margin: 1em 0em;
   font-size: 1.25em;
+  line-height: 1.25;
 }
 
 a {
   text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
 }
 
 .container {
@@ -41,20 +47,23 @@ a {
 }
 
 .aboutImg {
-  width: 40%;
+  width: 30%;
   float: right;
   margin-top: 15px;
+  clear: both;
 }
 
 .aboutDiv {
   display: inline-block;
-  width: 58%;
+  width: 65%;
 }
 
 #pageTitle {
   margin-top: 15px;
   margin-bottom: 0px;
 }
+
+/* Mobile Sized */
 
 @media only screen and (max-width: 767px) {
   body {
@@ -124,6 +133,8 @@ a {
   }
 }
 
+/* Tablet Sized */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .links {
     margin-right: 15px;
@@ -141,6 +152,8 @@ a {
     display: none
   }
 }
+
+/* Computer Sized */
 
 @media only screen and (min-width: 1025px) {
   .links {
