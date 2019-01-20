@@ -1,9 +1,12 @@
 body {
   margin: 0% 2%;
+  background-color: #d0e4fc;
+  color: #111111;
 }
 
 h1 {
-  font-size: 2.25em;
+  font-family: 'Goblin One', cursive;
+  font-size: 2em;
   margin-top: 0px;
   margin-bottom: 5px;
   margin-right: 0px;
@@ -11,17 +14,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
-  margin: 15px 0px;
-}
-
-h3 {
+  font-family: 'Goblin One', cursive;
   font-size: 1.5em;
+  margin: 15px 0px;
 }
 
 p {
   margin-top: 0px;
   margin-bottom: 20px;
+  font-family: 'Vollkorn', serif;
   font-size: 1.25em;
   line-height: 1.25;
 }
@@ -32,7 +33,7 @@ a {
 
 nav {
   border-bottom: 2px solid #302f2f;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-bottom: 10px;
 }
 
@@ -56,11 +57,6 @@ iframe {
 
 #burger {
   display: none
-}
-
-#pageTitle {
-  margin-top: 15px;
-  margin-bottom: 10px;
 }
 
 /* Mobile Sized */
@@ -127,10 +123,6 @@ iframe {
   #navbottom {
     border-bottom: 2px solid #302f2f;
     margin-bottom: 0px;
-  }
-
-  #pageTitle {
-    margin-top: 0px;
   }
 }
 

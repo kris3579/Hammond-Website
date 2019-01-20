@@ -41,7 +41,7 @@ app.get('*', (req, res) => {
 function homePage(req, res) {
   res.render('master', {
     'thisPage': 'partials/home.ejs',
-    'thisPageTitle': ''
+    'thisPageTitle': 'Home'
   });
 }
 
@@ -62,7 +62,7 @@ function showsPage(req, res) {
 function aboutPage(req, res) {
   res.render('master', {
     'thisPage': 'partials/about.ejs',
-    'thisPageTitle': ''
+    'thisPageTitle': 'About'
   })
 }
 
