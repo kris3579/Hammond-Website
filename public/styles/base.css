@@ -1,60 +1,65 @@
 body {
   margin: 0% 2%;
+  background-color: #d0e4fc;
+  color: #111111;
 }
 
 h1 {
-  font-size: 2.25em;
+  font-family: 'Goblin One', cursive;
+  font-size: 2em;
   margin-top: 0px;
   margin-bottom: 5px;
   margin-right: 0px;
-  width: 40%;
   display: inline-block;
 }
 
 h2 {
-  font-size: 2em;
+  font-family: 'Goblin One', cursive;
+  font-size: 1.5em;
   margin: 15px 0px;
 }
 
-h3 {
-  font-size: 1.5em;
-}
-
 p {
-  margin: 0.5em 0em;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Vollkorn', serif;
   font-size: 1.25em;
+  line-height: 1.25;
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 768px;
-  width: 100%;
+nav {
+  border-bottom: 2px solid #302f2f;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
 }
 
-.abouth3 {
-  display: inline-block;
-  margin-top: 15px;
+iframe {
+  width: 100%;
+  height: 500px;
 }
 
 .aboutImg {
-  width: 40%;
   float: right;
-  margin-top: 15px;
+  margin-left: 7px;
+  margin-bottom: 7px;
 }
 
-.aboutDiv {
-  display: inline-block;
-  width: 58%;
+.links {
+  margin-right: 15px;
+  display: inline;
+  border: none;
+  font-size: 1.35em;
 }
 
-#pageTitle {
-  margin-top: 15px;
-  margin-bottom: 0px;
+#burger {
+  display: none
 }
+
+/* Mobile Sized */
 
 @media only screen and (max-width: 767px) {
   body {
@@ -63,11 +68,20 @@ a {
 
   h1 {
     margin-bottom: 10px;
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.15em;
   }
 
   nav {
-    border-bottom: 2px solid #302f2f;
-    margin-bottom: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
   }
 
   .links {
@@ -88,74 +102,42 @@ a {
     border-bottom: 1px solid #747171;
   }
 
-  .links-active-title {
-    margin-bottom: 0px;
-  }
-
   .aboutImg {
-    width: 90%;
+    width: 80%;
     float: none;
+    margin: 0px;
+    margin-bottom: 10px;
   }
 
-  #burger {
-    cursor: pointer;
-    float: right;
-    font-size: 1.35em;
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-  
   .noBorder {
     border-bottom: none;
   }
 
+  #burger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    font-size: 1.35em;
+  }
+  
   #navbottom {
     border-bottom: 2px solid #302f2f;
     margin-bottom: 0px;
   }
-
-  .abouth2 {
-    font-size: 1.75em;
-    text-align: center;
-  }
-
-  #pageTitle {
-    margin-top: 0px;
-  }
 }
+
+/* Tablet Sized */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .links {
-    margin-right: 15px;
-    display: inline;
-    border: none;
-    font-size: 1.35em;
-  }
-
-  .nav {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #302f2f;
-  }
-
-  #burger {
-    display: none
+  .aboutImg {
+    width: 50%;
   }
 }
 
+/* Computer Sized */
+
 @media only screen and (min-width: 1025px) {
-  .links {
-    margin-right: 15px;
-    display: inline;
-    border: none;
-    font-size: 1.35em;
-  }
-
-  .nav {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #302f2f;
-  }
-
-  #burger {
-    display: none
+  .aboutImg {
+    width: 30%;
   }
 }

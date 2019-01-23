@@ -28,6 +28,10 @@ app.get('/shows', (req, res) => {
   showsPage(req, res);
 });
 
+app.get('/about', (req, res) => {
+  aboutPage(req, res);
+});
+
 app.get('*', (req, res) => {
   noPageError(res);
 });
@@ -53,6 +57,13 @@ function showsPage(req, res) {
     'thisPage': 'partials/shows.ejs',
     'thisPageTitle': 'Shows'
   });
+}
+
+function aboutPage(req, res) {
+  res.render('master', {
+    'thisPage': 'partials/about.ejs',
+    'thisPageTitle': 'About'
+  })
 }
 
 function noPageError(res, err) {
