@@ -1,6 +1,5 @@
 'use strict';
 
-require('dotenv').config();
 const express = require('express');
 const PORT = 8080;
 const app = express();
@@ -15,21 +14,29 @@ app.listen(PORT, () => console.log('Server is up on ', PORT));
 
 app.set('view engine', 'ejs');
 
-// routes
+// Routes
 
 app.get('/', (req, res) => {
   homePage(req, res);
 });
 
+app.get('/contact', (req, res) => {
+  contactPage(req, res);
+});
+
+app.get('/shows', (req, res) => {
+  showsPage(req, res);
+});
+
 app.get('/about', (req, res) => {
-  aboutUs(req, res);
+  aboutPage(req, res);
 });
 
 app.get('*', (req, res) => {
   noPageError(res);
 });
 
-// route functions
+// Rendering functions for routes
 
 function homePage(req, res) {
   res.render('master', {
@@ -38,11 +45,25 @@ function homePage(req, res) {
   });
 }
 
-function aboutUs(req, res) {
+function contactPage(req, res) {
+  res.render('master', {
+    'thisPage': 'partials/contact.ejs',
+    'thisPageTitle': 'Contact'
+  });
+}
+
+function showsPage(req, res) {
+  res.render('master', {
+    'thisPage': 'partials/shows.ejs',
+    'thisPageTitle': 'Shows'
+  });
+}
+
+function aboutPage(req, res) {
   res.render('master', {
     'thisPage': 'partials/about.ejs',
-    'thisPageTitle': 'About Us'
-  });
+    'thisPageTitle': 'About'
+  })
 }
 
 function noPageError(res, err) {

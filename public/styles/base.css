@@ -1,0 +1,158 @@
+body {
+  margin: 0% 2%;
+  background-color: rgb(192, 206, 228);
+  color: #111111;
+}
+
+h1 {
+  font-family: 'Goblin One', cursive;
+  font-size: 2.5em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  display: inline-block;
+  width: 80%;
+}
+
+h2 {
+  font-family: 'Goblin One', cursive;
+  font-size: 1.5em;
+  margin: 15px 0px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Vollkorn', serif;
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  border-bottom: 2px solid #302f2f;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.aboutImg {
+  float: right;
+  margin-left: 7px;
+  margin-bottom: 7px;
+}
+
+.links {
+  margin-right: 15px;
+  display: inline;
+  border: none;
+  font-size: 1.35em;
+}
+
+#headerbox {
+  position: relative;
+}
+
+#burger {
+  display: none
+}
+
+/* Mobile Sized */
+
+@media only screen and (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.15em;
+  }
+
+  nav {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  }
+
+  iframe {
+    margin-top: 10px;
+  }
+
+  .links {
+    display: none;
+    font-size: 1.35em;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  	margin: 0;
+  }
+  
+  .links-active {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #747171;
+  }
+
+  .aboutImg {
+    width: 80%;
+    float: none;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .noBorder {
+    border-bottom: none;
+  }
+
+  #burger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0.7%;
+    left: 92%;
+    font-size: 1.35em;
+  }
+  
+  #navbottom {
+    border-bottom: 2px solid #302f2f;
+    margin-bottom: 0px;
+  }
+}
+
+/* Tablet Sized */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutImg {
+    width: 50%;
+  }
+}
+
+/* Computer Sized */
+
+@media only screen and (min-width: 1025px) {
+  iframe {
+    width: 70%;
+  }
+
+  .aboutImg {
+    width: 30%;
+  }
+}

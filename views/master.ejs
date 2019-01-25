@@ -5,29 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dirt Finder - <%= thisPageTitle %></title>
+    <title>Gary Hammon - <%= thisPageTitle %></title>
     <%- include partials/styles.ejs %>
     
   </head>
 
   <body>
 
-    <header>
-      <h1 class="title">Dirt Finder</h1>
+    <header id="headerBox">
+      <h1>Gary Hammon</h1>
       <%- include partials/nav.ejs %>
-      </div>   
     </header>
     
     <main>
 
-      <div class="page-title">
-        <h2><%= thisPageTitle %></h2>
-      </div>
-
       <div class="content-container">
-          <div class="content-container-inner">
-              <%- include(thisPage) %>
-          </div>
+        <%- include(thisPage) %>
       </div>
 
       <%- include partials/scripts.ejs %>
