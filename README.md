@@ -1,2 +1,2 @@
 ### Purpose
-Building a website for Gary Hammond
+Building a website for Gary Hammon
