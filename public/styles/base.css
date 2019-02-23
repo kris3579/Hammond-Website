@@ -45,7 +45,7 @@ nav {
 iframe {
   display: block;
   height: 80vh;
-  margin: 0 auto;
+  margin: 2.5vh auto;
   width: 95vw;
 }
 
@@ -71,15 +71,15 @@ iframe {
 
 .htmlHome {
   background: url('../assets/GaryHome.jpg') no-repeat fixed;
-  background-position-y: 9vh;
+  background-position-y: 8vh;
   background-position-x: center;
   background-size: 1810px;
   background-color: rgb(192, 206, 228);
 }
 
 .homeContent {
-  margin-top: 59vh;
-  padding-top: 1.5vh;
+  margin-top: 58vh;
+  padding-top: .5vh;
   background-color: rgb(192, 206, 228);
 }
 
@@ -96,7 +96,8 @@ iframe {
 }
 
 #headerBox {
-  /* position: relative; */
+  position: sticky;
+  top: 0;
   background-color: rgb(192, 206, 228);
   clear: both;
 }
@@ -135,9 +136,13 @@ iframe {
   }
 
   .htmlHome {
-    background-position-y: 9vh;
+    background-position-y: 12vh;
     background-position-x: 0%;
     background-size: 414px auto;
+  }
+
+  .homeContent {
+    margin-top: 18vh;
   }
 
   .links {
