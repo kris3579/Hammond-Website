@@ -63,7 +63,7 @@ function aboutPage(req, res) {
   res.render('master', {
     'thisPage': 'partials/about.ejs',
     'thisPageTitle': 'About'
-  })
+  });
 }
 
 function noPageError(res, err) {
