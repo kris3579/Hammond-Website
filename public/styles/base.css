@@ -72,7 +72,8 @@ iframe {
 .garyHome {
   max-width: 100vw;
   max-height: 100vh;
-  background-position: fixed;
+  margin: 0 auto;
+  display: block;
 }
 
 .homeContent {
