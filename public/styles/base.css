@@ -1,5 +1,6 @@
 html {
-  background-color: rgb(192, 206, 228);
+  /* background-color: rgb(192, 206, 228); */
+  background-color: rgb(95, 95, 95);
   /* overflow: hidden; */
 }
 
@@ -14,7 +15,7 @@ h1 {
   font-size: 2.5em;
   margin: .5vh 0vw;
   display: inline-block;
-  width: 80%;
+  width: 80vw;
   padding: 0vh 1.5vw;
 }
 
@@ -23,6 +24,15 @@ h2 {
   font-size: 1.5em;
   margin: 2vh 0vw;
   padding: 0vh 1.5vw;
+}
+
+figure {
+  margin: 0vh 0vw 0vh 7vw;
+}
+
+figcaption {
+  font-size: 1.25em;
+  margin-bottom: .75vh;
 }
 
 p {
@@ -36,23 +46,30 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #111111;
+}
+
 nav {
   border-bottom: 2px solid #302f2f;
   padding: 0vh 1.5vw;
   padding-bottom: 1vh;
 }
 
-iframe {
+.calendar{
   display: block;
   height: 80vh;
   margin: 2.5vh auto;
   width: 95vw;
 }
+.content-container {
+  font-size: 0;
+}
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 .aboutImg {
@@ -80,24 +97,93 @@ iframe {
   padding-top: .5vh;
 }
 
+.quote {
+  font-size: 26pt;
+  margin: 0vh 0vw;
+}
+
+.quoteCredit {
+  font-size: 15pt;
+  color: gray;
+  text-align: right;
+}
+
+.quotesDiv {
+  width: 70vw;
+  padding: 1.5vh 2vw;
+  margin: 2vh auto;
+  background-color: rgb(204, 217, 236);
+}
+
+.contactDiv {
+  text-align: center;
+  margin: 0 auto;
+  width: 35vw;
+  padding: 1.5vh 2vw;
+  background-color: rgb(204, 217, 236);
+}
+
+.youtubeVid {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2vh;
+  height: 60vh;
+  max-width: 65vw;
+}
+
 .photoCredit {
   font-size: 12px;
-  color: gray;
+  color: whitesmoke;
   text-align: center;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
 
 .homeImage {
   margin: 0 auto;
   display: block;
-  margin-bottom: 3vh;
-  max-width: 85%;
+  margin-bottom: 2vh;
+  max-width: 85vw;
+}
+
+.aboutP {
+  color: whitesmoke;
+}
+
+.galleryDiv {
+  width: 50vw;
+  height: 40vh;
+  display: inline-block;
+  position: relative;
+}
+
+.galleryImage {
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border-radius: 3px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.galleryImage:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #headerBox {
   position: sticky;
   top: 0;
-  background-color: rgb(192, 206, 228);
+  background-color: rgb(204, 217, 236);
   clear: both;
+  z-index: 1000;
 }
 
 #burger {

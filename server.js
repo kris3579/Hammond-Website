@@ -20,12 +20,12 @@ app.get('/', (req, res) => {
   homePage(req, res);
 });
 
-app.get('/contact', (req, res) => {
-  contactPage(req, res);
-});
-
 app.get('/shows', (req, res) => {
   showsPage(req, res);
+});
+
+app.get('/gallery', (req, res) => {
+  galleryPage(req, res);
 });
 
 app.get('/about', (req, res) => {
@@ -45,17 +45,17 @@ function homePage(req, res) {
   });
 }
 
-function contactPage(req, res) {
-  res.render('master', {
-    'thisPage': 'partials/contact.ejs',
-    'thisPageTitle': 'Contact'
-  });
-}
-
 function showsPage(req, res) {
   res.render('master', {
     'thisPage': 'partials/shows.ejs',
     'thisPageTitle': 'Shows'
+  });
+}
+
+function galleryPage(req, res) {
+  res.render('master', {
+    'thisPage': 'partials/gallery.ejs',
+    'thisPageTitle': 'Gallery'
   });
 }
 
