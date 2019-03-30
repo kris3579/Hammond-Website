@@ -42,15 +42,6 @@ p {
   line-height: 1.25;
 }
 
-a {
-  text-decoration: none;
-  color: #111111;
-}
-
-a:visited {
-  color: #111111;
-}
-
 nav {
   border-bottom: 2px solid #302f2f;
   padding: 0vh 1.5vw;
@@ -85,6 +76,12 @@ nav {
   display: inline;
   border: none;
   font-size: 1.35em;
+  color: #111111;
+  text-decoration: none;
+}
+
+.links:visited {
+  color: #111111;
 }
 
 .garyHome {
@@ -104,16 +101,44 @@ nav {
 }
 
 .quoteCredit {
+  font-style: italic;
   font-size: 15pt;
   color: gray;
   text-align: right;
 }
 
 .quotesDiv {
-  width: 70vw;
+  width: 66vw;
   padding: 1.5vh 2vw;
   margin: 2vh auto;
   background-color: rgb(204, 217, 236);
+}
+
+.articleBar {
+  height: 100%;
+  width: 30vw;
+  float: right;
+  background-color: rgb(204, 217, 236); 
+  margin-top: 1vh;
+  padding-top: 2vh;
+}
+
+.articlesHeader {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  margin-top: 0;
+}
+
+.articleLinks {
+  display: block;
+  font-size: 14pt;
+  padding-left: .75vw;
+  text-decoration: none;
+}
+
+.articleDesc {
+  text-align: center;
 }
 
 .contactDiv {
@@ -126,18 +151,22 @@ nav {
 
 .youtubeVid {
   margin: 0 auto;
-  display: block;
-  margin-bottom: 2vh;
+  display: inline-block;
+  margin: 1vh 0vw 1vh 2vw;
   height: 60vh;
   max-width: 65vw;
 }
 
 .photoCredit {
-  font-size: 12px;
+  font-size: 8pt;
   color: whitesmoke;
   text-align: center;
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
+  margin: 0;
+}
+
+.garyBlurb {
+  text-align: center;
+  font-size: 20pt;
 }
 
 .homeImage {
@@ -152,16 +181,29 @@ nav {
   font-size: 14pt;
 }
 
+.galleryContainer {
+  display: flex;
+}
+
+.galleryCaption {
+  color: whitesmoke;
+  font-size: 12pt;
+  margin: 0;
+  text-align: center;
+}
+
 .galleryDiv {
-  width: 50vw;
+  width: 30vw;
   height: 40vh;
   display: inline-block;
   position: relative;
+  padding: 0vh 10vw 0vh 10vw;
+  margin: 1vh 0vw 0vh 0vw;
 }
 
 .galleryImage {
   max-width: 95%;
-  max-height: 95%;
+  max-height: 85%;
   position: absolute;
   top: 10%;
   left: 10%;
