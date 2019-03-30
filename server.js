@@ -24,6 +24,10 @@ app.get('/shows', (req, res) => {
   showsPage(req, res);
 });
 
+app.get('/videosArticles', (req, res) => {
+  videosPage(req, res);
+});
+
 app.get('/gallery', (req, res) => {
   galleryPage(req, res);
 });
@@ -49,6 +53,13 @@ function showsPage(req, res) {
   res.render('master', {
     'thisPage': 'partials/shows.ejs',
     'thisPageTitle': 'Shows'
+  });
+}
+
+function videosPage(req, res) {
+  res.render('master', {
+    'thisPage': 'partials/videosArticles.ejs',
+    'thisPageTitle': 'Videos/Articles'
   });
 }
 
