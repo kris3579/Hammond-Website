@@ -150,12 +150,19 @@ nav {
   background-color: rgb(204, 217, 236);
 }
 
+.vid {
+  margin: 0 auto;
+  display: inline-block;
+  margin: 1vh 0vw 1vh 2vw;
+  max-width: 65vw;
+}
+
 .youtubeVid {
   margin: 0 auto;
   display: inline-block;
   margin: 1vh 0vw 1vh 2vw;
-  max-height: 60vh;
-  max-width: 65vw;
+  height: 55vh;
+  width: 65vw;
 }
 
 .photoCredit {
@@ -235,7 +242,7 @@ nav {
 
 /* Mobile */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
   body {
     text-align: center;
   }
@@ -339,10 +346,16 @@ nav {
     width: 85vw;
   }
 
+  .vid {
+    display: block;
+    margin: 0 auto 2vh;
+    max-width: 90vw;
+  }
+
   .youtubeVid {
     display: block;
-    margin: 0 auto 2vh auto;
-    max-width: 90vw;
+    margin: 0 auto 2vh;
+    width: 90vw;
   }
 
   .galleryContainer {
