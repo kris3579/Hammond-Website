@@ -32,8 +32,8 @@ app.get('/gallery', (req, res) => {
   galleryPage(req, res);
 });
 
-app.get('/about', (req, res) => {
-  aboutPage(req, res);
+app.get('/bio', (req, res) => {
+  bioPage(req, res);
 });
 
 app.get('*', (req, res) => {
@@ -70,10 +70,10 @@ function galleryPage(req, res) {
   });
 }
 
-function aboutPage(req, res) {
+function bioPage(req, res) {
   res.render('master', {
-    'thisPage': 'partials/about.ejs',
-    'thisPageTitle': 'About'
+    'thisPage': 'partials/bio.ejs',
+    'thisPageTitle': 'Bio'
   });
 }
 
