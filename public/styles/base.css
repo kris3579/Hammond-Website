@@ -27,11 +27,12 @@ h2 {
 }
 
 figure {
-  margin: 0vh 0vw 0vh 7vw;
+  margin: 0vh 0vw 0vh 5vw;
 }
 
 figcaption {
-  font-size: 1.25em;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14pt;
   margin-bottom: .75vh;
 }
 
@@ -43,7 +44,7 @@ p {
 }
 
 nav {
-  border-bottom: 2px solid #302f2f;
+  border-bottom: 3px solid rgb(218, 189, 61);
   padding: 0vh 1.5vw;
   padding-bottom: 1vh;
 }
@@ -149,12 +150,19 @@ nav {
   background-color: rgb(204, 217, 236);
 }
 
+.vid {
+  margin: 0 auto;
+  display: inline-block;
+  margin: 1vh 0vw 1vh 2vw;
+  max-width: 65vw;
+}
+
 .youtubeVid {
   margin: 0 auto;
   display: inline-block;
   margin: 1vh 0vw 1vh 2vw;
-  height: 60vh;
-  max-width: 65vw;
+  height: 55vh;
+  width: 65vw;
 }
 
 .photoCredit {
@@ -172,13 +180,12 @@ nav {
 .homeImage {
   margin: 0 auto;
   display: block;
-  margin-bottom: 2vh;
+  margin-bottom: .75vh;
   max-width: 85vw;
 }
 
 .aboutP {
   color: whitesmoke;
-  font-size: 14pt;
 }
 
 .galleryContainer {
@@ -187,17 +194,16 @@ nav {
 
 .galleryCaption {
   color: whitesmoke;
-  font-size: 12pt;
+  font-size: 10pt;
   margin: 0;
   text-align: center;
 }
 
 .galleryDiv {
-  width: 30vw;
+  width: 50vw;
   height: 40vh;
   display: inline-block;
   position: relative;
-  padding: 0vh 10vw 0vh 10vw;
   margin: 1vh 0vw 0vh 0vw;
 }
 
@@ -236,22 +242,14 @@ nav {
 
 /* Mobile */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
   body {
     text-align: center;
   }
 
   h1 {
     margin-bottom: 2vh;
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1.15em;
+    font-size: 26pt;
   }
 
   nav {
@@ -261,6 +259,20 @@ nav {
   iframe {
     height: 84vh;
     margin-top: 1vh;
+  }
+
+  figure {
+    margin: 0vh 5vw 0vh 0vw;
+  }
+
+  figcaption {
+    text-align: left;
+    margin: 0vh 0vw .75vh 2vw;
+    padding-top: 1vh;
+  }
+
+  audio {
+    max-width: 100%;
   }
 
   .links {
@@ -282,14 +294,9 @@ nav {
   }
 
   .aboutImg {
-    width: 80%;
+    max-width: 95vw;
     float: none;
-    margin: 0px;
-    margin-bottom: 2vh;
-  }
-
-  .noBorder {
-    border-bottom: none;
+    margin: 1vh 0 2vh 0;
   }
 
   #burger {
@@ -301,9 +308,70 @@ nav {
     font-size: 1.75em;
   }
   
-  #navbottom {
-    border-bottom: 2px solid #302f2f;
+  #navBottom {
+    border-bottom: none;
     margin-bottom: 0vh;
+  }
+
+  .homeImage {
+    max-width: 95vw;
+  }
+
+  .garyBlurb {
+    font-size: 18pt;
+    padding-top: .5vh;
+    margin-bottom: 0;
+  }
+
+  .quote {
+    font-size: 18pt;
+    padding: 1vh 0vw;
+  }
+
+  .quotesDiv {
+    width: 85vw;
+    padding-top: 0vh;
+    padding-bottom: 1vh;
+  }
+
+  .contactDiv {
+    width: 85vw;
+    padding: .5vh 2vw;
+  }
+
+  .articleBar {
+    float: none;
+    margin: 2vh auto;
+    padding: 2vh 2vw 0vh 2vw; 
+    width: 85vw;
+  }
+
+  .vid {
+    display: block;
+    margin: 0 auto 2vh;
+    max-width: 90vw;
+  }
+
+  .youtubeVid {
+    display: block;
+    margin: 0 auto 2vh;
+    width: 90vw;
+  }
+
+  .galleryContainer {
+    display: block;
+  }
+
+  .galleryCaption {
+    font-size: 10pt;
+  }
+
+  .galleryDiv {
+    width: 100vw;
+  }
+
+  .aboutP {
+    padding: 0vh 2.5vw;
   }
 }
 
