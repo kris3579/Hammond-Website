@@ -1,7 +1,7 @@
 {
-  "name": "hammond-website",
-  "version": "0.0.1",
-  "description": "Gary Hammond Website",
+  "name": "hammon-website",
+  "version": "1.0.0",
+  "description": "Gary Hammon Website",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kris3579/Hammond-Website.git"
+    "url": "git+https://github.com/kris3579/Hammon-Website.git"
   },
   "keywords": [
-    "Hammond"
+    "Hammon"
   ],
   "author": "Kris Esvelt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kris3579/Hammond-Website/issues"
+    "url": "https://github.com/kris3579/Hammon-Website/issues"
   },
-  "homepage": "https://github.com/kris3579/Hammond-Website",
+  "homepage": "https://github.com/kris3579/Hammon-Website",
   "dependencies": {
     "ejs": "^2.6.1",
     "eslint": "^5.12.0",
