@@ -1,7 +1,7 @@
 html {
-  /* background-color: rgb(192, 206, 228); */
-  background-color: rgb(95, 95, 95);
-  /* overflow: hidden; */
+  /* background-color: rgb(95, 95, 95); */
+  background-image: url('./../assets/images/brickbackground.jpg');
+  background-size: cover;
 }
 
 body {
@@ -36,6 +36,10 @@ figcaption {
   margin-bottom: .75vh;
 }
 
+a {
+  color: black;
+}
+
 p {
   margin-top: 2vh;
   padding: 0vh 1.5vw;
@@ -44,7 +48,8 @@ p {
 }
 
 nav {
-  border-bottom: 3px solid rgb(218, 189, 61);
+  border-bottom: 3px solid black;
+  /* border-bottom: 3px solid rgb(218, 189, 61); */
   padding: 0vh 1.5vw;
   padding-bottom: 1vh;
 }
@@ -112,16 +117,20 @@ nav {
   width: 66vw;
   padding: 1.5vh 2vw;
   margin: 2vh auto;
-  background-color: rgb(204, 217, 236);
+  background-color: rgb(142, 169, 212);
+  border: 1.5px solid black;
+  border-radius: 25px;
 }
 
 .articleBar {
   height: 100%;
   width: 30vw;
   float: right;
-  background-color: rgb(204, 217, 236); 
+  background-color: rgb(142, 169, 212);
   margin-top: 1vh;
   padding-top: 2vh;
+  border: 1.5px solid black;
+  border-radius: 25px;
 }
 
 .articlesHeader {
@@ -135,7 +144,6 @@ nav {
   display: block;
   font-size: 14pt;
   padding-left: .75vw;
-  text-decoration: none;
 }
 
 .articleDesc {
@@ -147,7 +155,9 @@ nav {
   margin: 0 auto;
   width: 35vw;
   padding: 1.5vh 2vw;
-  background-color: rgb(204, 217, 236);
+  background-color: rgb(142, 169, 212);
+  border: 1.5px solid black;
+  border-radius: 25px;
 }
 
 .vid {
@@ -170,10 +180,12 @@ nav {
   color: whitesmoke;
   text-align: center;
   margin: 0;
+  font-weight: bold;
 }
 
 .garyBlurb {
   text-align: center;
+  align-content: center;
   font-size: 20pt;
 }
 
@@ -194,8 +206,9 @@ nav {
 
 .galleryCaption {
   color: whitesmoke;
+  font-weight: bold;
   font-size: 10pt;
-  margin: 0;
+  margin: 1vh 0vw 0vh 0vw;
   text-align: center;
 }
 
@@ -217,8 +230,7 @@ nav {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
 }
 
-.galleryImage:empty
-{
+.galleryImage:empty {
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -231,7 +243,8 @@ nav {
 #headerBox {
   position: sticky;
   top: 0;
-  background-color: rgb(204, 217, 236);
+  background-color: rgb(142, 169, 212);
+  /* background-color: rgb(204, 217, 236); */
   clear: both;
   z-index: 1000;
 }
@@ -364,10 +377,16 @@ nav {
 
   .galleryCaption {
     font-size: 10pt;
+    margin: 0;
   }
 
   .galleryDiv {
     width: 100vw;
+    margin: 2.5vh 0vw 0vh 0vw;
+  }
+
+  .galleryImage:empty {
+    top: 57%;
   }
 
   .aboutP {
