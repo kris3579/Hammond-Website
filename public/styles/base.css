@@ -57,7 +57,7 @@ nav {
 .calendar{
   display: block;
   height: 80vh;
-  margin: 2.5vh auto;
+  margin: 2vh auto;
   width: 95vw;
 }
 .content-container {
@@ -197,7 +197,15 @@ nav {
 }
 
 .aboutP {
-  color: whitesmoke;
+  color: black;
+}
+
+.aboutDiv {
+  width: 66vw;
+  margin: 2vh 1vw 0vh 1vw;
+  background-color: rgb(142, 169, 212);
+  border: 1.5px solid black;
+  border-radius: 25px;
 }
 
 .galleryContainer {
@@ -209,6 +217,14 @@ nav {
   font-weight: bold;
   font-size: 10pt;
   margin: 1vh 0vw 0vh 0vw;
+  text-align: center;
+}
+
+.galleryCaptionLower {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 10pt;
+  margin: 5.5vh 0vw 0vh 0vw;
   text-align: center;
 }
 
@@ -256,6 +272,10 @@ nav {
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
+  html {
+    background-size: contain
+  }
+
   body {
     text-align: center;
   }
@@ -307,9 +327,9 @@ nav {
   }
 
   .aboutImg {
-    max-width: 95vw;
+    max-width: 100vw;
     float: none;
-    margin: 1vh 0 2vh 0;
+    margin: 0vh 0vw 2vh 0vw;
   }
 
   #burger {
@@ -349,7 +369,7 @@ nav {
 
   .contactDiv {
     width: 85vw;
-    padding: .5vh 2vw;
+    padding: 0vh 2vw 1.5vh 2vw;
   }
 
   .articleBar {
@@ -380,6 +400,10 @@ nav {
     margin: 0;
   }
 
+  .galleryCaptionLower {
+    margin: 2.5vh 0vw 0vh 0vw;
+  }
+
   .galleryDiv {
     width: 100vw;
     margin: 2.5vh 0vw 0vh 0vw;
@@ -392,16 +416,16 @@ nav {
   .aboutP {
     padding: 0vh 2.5vw;
   }
+
+  .aboutDiv { 
+    margin: 0 auto;
+    width: 90vw;
+  }
 }
 
 /* Tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .htmlHome {
-    background-position-y: 7vh;
-    background-size: 1024px auto;
-  }
-
   .aboutImg {
     width: 50vw;
   }
@@ -412,10 +436,6 @@ nav {
 /* Computer */
 
 @media only screen and (min-width: 1025px) {
-  iframe {
-    width: 75vw;
-  }
-
   .aboutImg {
     width: 30vw;
   }
