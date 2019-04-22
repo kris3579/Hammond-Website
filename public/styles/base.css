@@ -70,7 +70,6 @@ nav {
   position: sticky;
   top: 0;
   background-color: rgb(142, 169, 212);
-  /* background-color: rgb(204, 217, 236); */
   clear: both;
   z-index: 1000;
 }
@@ -110,7 +109,7 @@ nav {
 }
 
 .quote {
-  font-size: 26pt;
+  font-size: 20pt;
   margin: 0vh 0vw;
 }
 
@@ -193,6 +192,8 @@ nav {
   width: 65vw;
 }
 
+
+/* Gallery */
 .galleryContainer {
   display: flex;
 }
@@ -245,7 +246,8 @@ nav {
 .bioImg {
   float: right;
   margin-top: 1vh;
-  margin-right: 1vh;
+  margin-right: 1.5vh;
+  max-width: 30vw;
 }
 
 .aboutP {
@@ -259,10 +261,11 @@ nav {
   border: 1.5px solid black;
   border-radius: 25px;
 }
-
+/* ------------------------------------------------------------------ */
 /* Mobile */
+/* ------------------------------------------------------------------ */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   html {
     background-size: contain
   }
@@ -381,7 +384,6 @@ nav {
   }
   
   .galleryCaption {
-    font-size: 10pt;
     margin: 0;
   }
   
@@ -415,7 +417,57 @@ nav {
   }
 }
 
+/* --------------------------------------------------- */
+/* Tablet */
+/* --------------------------------------------------- */
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  /* Gallery */
+  .galleryDiv {
+    margin: 0;  
+  }
+  
+  .galleryCaptionLower {
+    margin-top: 5.5vh;
+  }
+  
+  .galleryImage:empty {
+    top: 49%;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Mobile Landscape*/
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  /* Videos/Articles */
+  .youtubeVid {
+    height: 80vh;
+  }
+  
+  /* Gallery */
+  .galleryContainer {
+    display: flex;
+  }
+
+  .galleryDiv {
+    height: 60vh;
+    margin: 0vh 0vw 5vh 0vw;
+  }
+
+  .galleryCaptionLower {
+    margin-top: 0;
+  }
+
+  .galleryImage:empty {
+    top: 60%;
+  }
+}
+
+/* --------------------------------------------------- */
 /* Computer */
+/* --------------------------------------------------- */
 
 @media only screen and (min-width: 1025px) {
   .bioImg {
