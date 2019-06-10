@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: black;
+  color: rgb(70, 170, 255);
   position: relative;
   font-family: 'Abadi MT Condensed Light', sans-serif;
 }
@@ -36,7 +36,7 @@ figcaption {
 }
 
 a {
-  color: black;
+  color: rgb(70, 170, 255);
 }
 
 p {
@@ -58,18 +58,18 @@ nav {
   display: inline;
   border: none;
   font-size: 1.35em;
-  color: #111111;
+  color: rgb(70, 170, 255);
   text-decoration: none;
 }
 
 .links:visited {
-  color: #111111;
+  color: rgb(70, 170, 255);
 }
 
 #headerBox {
   position: sticky;
   top: 0;
-  background-color: rgb(142, 169, 212);
+  background-color: rgb(20, 20, 20);
   clear: both;
   z-index: 1000;
 }
@@ -124,7 +124,7 @@ nav {
   width: 66vw;
   padding: 1.5vh 2vw;
   margin: 2vh auto;
-  background-color: rgb(142, 169, 212);
+  background-color: rgb(20, 20, 20);
   border: 1.5px solid black;
   border-radius: 25px;
 }
@@ -134,7 +134,7 @@ nav {
   margin: 0 auto;
   width: 35vw;
   padding: 1.5vh 2vw;
-  background-color: rgb(142, 169, 212);
+  background-color: rgb(20, 20, 20);
   border: 1.5px solid black;
   border-radius: 25px;
 }
@@ -153,7 +153,7 @@ nav {
   height: 100%;
   width: 30vw;
   float: right;
-  background-color: rgb(142, 169, 212);
+  background-color: rgb(20, 20, 20);
   margin-top: 1vh;
   padding-top: 2vh;
   border: 1.5px solid black;
@@ -251,13 +251,13 @@ nav {
 }
 
 .aboutP {
-  color: black;
+  color: rgb(70, 170, 255);
 }
 
 .aboutDiv {
   width: 66vw;
   margin: 2vh 1vw 0vh 1vw;
-  background-color: rgb(142, 169, 212);
+  background-color: rgb(20, 20, 20);
   border: 1.5px solid black;
   border-radius: 25px;
 }
