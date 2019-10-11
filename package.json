@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/kris3579/Hammon-Website",
   "dependencies": {
-    "ejs": "^2.6.1",
-    "eslint": "^5.16.0",
-    "express": "^4.16.4",
-    "heroku": "^7.22.9"
+    "ejs": "^2.7.1",
+    "eslint": "^6.5.1",
+    "express": "^4.17.1",
+    "heroku": "^7.33.3"
   }
 }
